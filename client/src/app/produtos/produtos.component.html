@@ -1,0 +1,5 @@
+<ul>
+	<li><a [routerLink]="['/produtos', 'new']">Novo Produto</a></li>
+</ul>
+<app-produto *ngFor="let produto of produtos" [produto]="produto"></app-produto>
+<router-outlet></router-outlet>
